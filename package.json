@@ -1,21 +1,26 @@
 {
-	"name": "@guyromellemagayano/gatsby-plugin-google-fonts",
+	"name": "@epic-design-labs/gatsby-plugin-google-fonts",
 	"version": "1.0.0",
 	"description": "Bring Google Fonts to Gatsby. Supports the latest Gatsby version (v4) and utilizes the latest Google Fonts API version. Currently in active development.",
 	"main": "index.js",
 	"author": {
-		"name": "Guy Romelle Magayano",
-		"url": "https://guyromellemagayano.dev",
-		"email": "aspiredtechie2010@gmail.com"
+		"name": "Epic Design Labs",
+		"url": "https://epicdesignlabs.com",
+		"email": "info@epicdesignlabs.com"
 	},
 	"contributors": [
+		{
+			"name": "Guy Romelle Magayano",
+			"url": "https://guyromellemagayano.dev",
+			"email": "aspiredtechie2010@gmail.com"
+		},
 		{
 			"name": "Mihai Pocorschi",
 			"email": "mihai@pocorschi.com"
 		}
 	],
 	"bugs": {
-		"url": "https://github.com/guyromellemagayano/gatsby-plugin-google-fonts/issues"
+		"url": "https://github.com/Epic-Design-Labs/gatsby-plugin-google-fonts/issues"
 	},
 	"license": "MIT",
 	"scripts": {
@@ -53,19 +58,19 @@
 	"peerDependencies": {
 		"gatsby": ">2.0.0"
 	},
-	"homepage": "https://github.com/guyromellemagayano/gatsby-plugin-google-fonts#readme",
+	"homepage": "https://github.com/Epic-Design-Labs/gatsby-plugin-google-fonts#readme",
 	"keywords": [
 		"node",
 		"npm",
 		"gatsby-plugin-google-fonts",
-		"@guyromellemagayano/gatsby-plugin-google-fonts",
+		"@epicdesignlabs",
 		"gatsby",
 		"plugin",
 		"google",
 		"fonts",
 		"api"
 	],
-	"repository": "https://github.com/guyromellemagayano/gatsby-plugin-google-fonts",
+	"repository": "https://github.com/Epic-Design-Labs/gatsby-plugin-google-fonts",
 	"config": {
 		"commitizen": {
 			"path": "./node_modules/cz-conventional-changelog"
@@ -83,5 +88,8 @@
 			"yarn lint",
 			"yarn format"
 		]
+	},
+	"publishConfig": {
+		"@epic-design-labs:registry": "https://npm.pkg.github.com"
 	}
 }
