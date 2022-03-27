@@ -1,0 +1,11 @@
+# Map file extensions
+*.map
+
+# Wildcard files
+gatsby-*
+
+# Folders
+constants/
+functions/
+gatsby/
+node_modules/

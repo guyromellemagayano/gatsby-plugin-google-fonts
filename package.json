@@ -1,0 +1,87 @@
+{
+	"name": "@guyromellemagayano/gatsby-plugin-google-fonts",
+	"version": "1.0.0",
+	"description": "Bring Google Fonts to Gatsby. Supports the latest Gatsby version (v4) and utilizes the latest Google Fonts API version. Currently in active development.",
+	"main": "index.js",
+	"author": {
+		"name": "Guy Romelle Magayano",
+		"url": "https://guyromellemagayano.dev",
+		"email": "aspiredtechie2010@gmail.com"
+	},
+	"contributors": [
+		{
+			"name": "Mihai Pocorschi",
+			"email": "mihai@pocorschi.com"
+		}
+	],
+	"bugs": {
+		"url": "https://github.com/guyromellemagayano/gatsby-plugin-google-fonts/issues"
+	},
+	"license": "MIT",
+	"scripts": {
+		"build": "babel src --out-dir ./ --source-maps",
+		"watch": "babel src --out-dir ./ --source-maps --watch",
+		"lint": "eslint --ext '**/*.{js,jsx}' --cache --color",
+		"format": "prettier --write '**/*.{js,jsx}'",
+		"prepare": "husky install",
+		"test": "jest --color"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.16.8",
+		"@babel/core": "^7.16.12",
+		"@babel/eslint-parser": "^7.16.5",
+		"@babel/plugin-transform-runtime": "^7.16.10",
+		"babel-jest": "^27.4.6",
+		"babel-preset-gatsby-package": "^2.5.0",
+		"commitizen": "^4.2.4",
+		"cz-conventional-changelog": "^3.3.0",
+		"eslint": "^8.7.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-babel": "^5.3.1",
+		"eslint-plugin-prettier": "^4.0.0",
+		"eslint-plugin-react": "^7.28.0",
+		"husky": "^7.0.4",
+		"jest": "^27.4.7",
+		"lint-staged": "^12.3.1",
+		"prettier": "^2.5.1",
+		"react": "^17.0.2"
+	},
+	"dependencies": {
+		"@babel/runtime": "^7.16.7",
+		"babel-preset-gatsby": "^2.5.2"
+	},
+	"peerDependencies": {
+		"gatsby": ">2.0.0"
+	},
+	"homepage": "https://github.com/guyromellemagayano/gatsby-plugin-google-fonts#readme",
+	"keywords": [
+		"node",
+		"npm",
+		"gatsby-plugin-google-fonts",
+		"@guyromellemagayano/gatsby-plugin-google-fonts",
+		"gatsby",
+		"plugin",
+		"google",
+		"fonts",
+		"api"
+	],
+	"repository": "https://github.com/guyromellemagayano/gatsby-plugin-google-fonts",
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "yarn lint-staged",
+			"prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
+			"commit": "cz"
+		}
+	},
+	"lint-staged": {
+		"**/*.{js,jsx}": [
+			"yarn lint",
+			"yarn format"
+		]
+	}
+}
