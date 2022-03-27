@@ -1,4 +1,4 @@
-# @guyromellemagayano/gatsby-plugin-google-fonts
+# @epic-design-labs/gatsby-plugin-google-fonts
 
 Revised Gatsby plugin that loads Google Fonts to your custom Gatsby sites. It supports importing variable size fonts.
 
@@ -8,10 +8,10 @@ Revised Gatsby plugin that loads Google Fonts to your custom Gatsby sites. It su
 
 ```bash
 # With NPM
-$ npm install @guyromellemagayano/gatsby-plugin-google-fonts
+$ npm install @epic-design-labs/gatsby-plugin-google-fonts
 
 # With Yarn
-$ yarn add @guyromellemagayano/gatsby-plugin-google-fonts
+$ yarn add @epic-design-labs/gatsby-plugin-google-fonts
 ```
 
 ## Add to Gatsby Config
@@ -21,7 +21,7 @@ In `gatbsy-config.js`
 ```javascript
 plugins: [
 	{
-		resolve: `@guyromellemagayano/gatsby-plugin-google-fonts`,
+		resolve: `@epic-design-labs/gatsby-plugin-google-fonts`,
 		options: {
 			fonts: [
 				{
@@ -73,7 +73,7 @@ plugins: [
 
 ## Author
 
-[**Guy Romelle Magayano**](https://guyromellemagayano.dev)
+[**Epic Design Labs**](https://epicdesignlabs.com)
 
 ## License
 
