@@ -88,5 +88,8 @@
 			"yarn lint",
 			"yarn format"
 		]
+	},
+	"publishConfig": {
+		"@epicdesignlabs:registry": "https://registry.npmjs.org"
 	}
 }
