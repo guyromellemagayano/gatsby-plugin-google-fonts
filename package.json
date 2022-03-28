@@ -90,6 +90,8 @@
 		]
 	},
 	"publishConfig": {
-		"@epicdesignlabs:registry": "https://registry.npmjs.org"
+		"name": "@epicdesignlabs/gatsby-plugin-google-fonts",
+		"access": "public",
+		"registry": "https://registry.npmjs.org/@epicdesignlabs"
 	}
 }
