@@ -1,5 +1,5 @@
 {
-	"name": "gatsby-plugin-google-fonts",
+	"name": "@epicdesignlabs/gatsby-plugin-google-fonts",
 	"version": "1.0.0",
 	"description": "Bring Google Fonts to Gatsby. Supports the latest Gatsby version (v4) and utilizes the latest Google Fonts API version. Currently in active development.",
 	"main": "index.js",
